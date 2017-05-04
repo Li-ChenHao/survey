@@ -1,13 +1,13 @@
 <?php
 
 /*---------------------------------------------
-  MAIAN SURVEY v1.1
+  ccfax
   Written by David Ian Bennett
   E-Mail: N/A
   Website: www.maiansurvey.com
 ----------------------------------------------*/
 // Error reporting..
-error_reporting(0);
+//error_reporting(0);
 
 // Start session..
 session_start();
@@ -29,6 +29,25 @@ include(PATH.'classes/class_mail.inc.php');
 include(PATH.'classes/survey.php');
 include(PATH.'classes/html_rendering.php');
 include(PATH.'inc/lib/Savant3.php');
+
+
+
+$surveyList = rows('surveys',' WHERE 1 ');
+//echo gettype($surveyList);
+
+if(!is_array($surveyList)||empty($surveyList)){
+  $listError = " 没有调查问卷哟，晚点再来吧 !";
+}else{
+  $data = "";
+  foreach ($surveyList as $key => $value) {
+     $data .= "<a href='"."http://survey.dev.com/index.php?survey=".$value['uniCode']."'>".$value['sur_title']."</a><br/>";
+  }
+
+  $listError = $data;
+}
+
+
+
 
 // Collation..
 @mysql_query("SET CHARACTER SET 'utf8'");
@@ -98,7 +117,8 @@ if (isset($_GET['error'])) {
     case 'expired':      $errMsg = $msg_error;  break;
     case 'no_questions': $errMsg = $msg_error3; break;
     case 'no_votes':     $errMsg = $msg_error4; break;
-    case 'no_code':      $errMsg = $msg_error5; break;
+    //case 'no_code':      $errMsg = $msg_error5; break;
+    case 'no_code':      $errMsg = $listError; break;
     case 'no_view':      $errMsg = $msg_error6; break;
   }
   include(PATH.'inc/header.php');

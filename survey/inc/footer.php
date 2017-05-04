@@ -1,7 +1,7 @@
 <?php
 
 /*---------------------------------------------
-  MAIAN SURVEY v1.1
+  ccfax
   Written by David Ian Bennett
   E-Mail: N/A
   Website: www.maiansurvey.com

@@ -405,7 +405,7 @@ $msg_header8               = 'Settings';
 $msg_error                 = 'The survey with code #"<b>{code}</b>" has expired!';
 $msg_error2                = 'The survey with code #"<b>{code}</b>" does not exist!';
 $msg_error3                = 'The survey with code #"<b>{code}</b>" has no questions!';
-$msg_error4                = 'You have already taken part in survey "<b>{code}</b>". Multiple voting isn`t allowed!';
+$msg_error4                = '您已经投过票了，请不要重复投票!';
 $msg_error5                = 'This page has expired.<br /><br />This page usually appears if you use your browser back button to view an expired survey page or if you try and access an invalid survey results page. OR if you attempt to directly access the main index.php file.';
 $msg_error6                = 'The results for survey #"<b>{code}</b>" are not viewable to the public!';
 
@@ -415,7 +415,7 @@ $msg_error6                = 'The results for survey #"<b>{code}</b>" are not vi
 ------------------*/
 
 
-$msg_script                = 'Maian Survey';
+$msg_script                = 'ccfax';
 $msg_script2               = 'v1.1';
 $msg_script3               = 'Powered by';
 $msg_script4               = 'Yes';

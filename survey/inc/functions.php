@@ -1,7 +1,7 @@
 <?php
 
 /*---------------------------------------------
-  MAIAN SURVEY v1.1
+  ccfax
   Written by David Ian Bennett
   E-Mail: N/A
   Website: www.maiansurvey.com
@@ -236,6 +236,23 @@ function get_browser_type() {
   }
   return $agent;
 }
+
+function rowData2($table,$query='') {
+  global $database;
+  $query = mysql_query("SELECT * FROM ".DB_PREFIX.$table.$query."") or die(db_MSG(__FILE__,__LINE__));
+  return mysql_fetch_object($query);
+}
+
+function rows($table, $query=''){
+  global $database;
+  $query = mysql_query("SELECT * FROM ".DB_PREFIX.$table.$query."") or die(db_MSG(__FILE__,__LINE__));
+  $res = array();
+  while ($row = mysql_fetch_assoc($query)) {
+    $res[] = $row;
+  }
+  return $res;
+}
+
 
 // Get mime type..
 function get_mime_type() {

@@ -1,7 +1,7 @@
 <?php
 
 /*---------------------------------------------
-  MAIAN SURVEY v1.1
+  ccfax
   Written by David Ian Bennett
   E-Mail: N/A
   Website: www.maiansurvey.com
@@ -201,7 +201,7 @@ if (isset($_POST['two'])) {
   mysql_query("INSERT INTO ".DB_PREFIX."colorschemes (`csc_id`, `csc_title`, `csc_width`, `title_background`, `title_color`, `title_font`, `title_size`, `question_background`, `question_color`, `question_font`, `question_size`, `answer_background`, `answer_color`, `answer_font`, `answer_size`) VALUES(7, 'Voyager', 1000, '484677', 'ffffff', 'Arial', 12, '364d5d', 'd5d28f', 'Arial', 12, '547c9d', 'ffffff', 'Arial', 12)") or die(db_MSG(__FILE__,__LINE__));
   
   // Insert config data..
-  mysql_query("INSERT INTO ".DB_PREFIX."config (`cfg_id`, `cfg_login`, `cfg_password`, `cfg_wname`, `cfg_wemail`, `cfg_wurl`, `cfg_afflink`, `smtp`, `smtp_host`, `smtp_user`, `smtp_pass`, `smtp_port`) VALUES(1, 'admin', '".md5('admin'.SECRET_KEY)."', 'My Survey System', 'you@example.com', 'http://www.example.com/surveys/', '', '0', 'localhost', '', '', '25')") or die(db_MSG(__FILE__,__LINE__));
+  mysql_query("INSERT INTO ".DB_PREFIX."config (`cfg_id`, `cfg_login`, `cfg_password`, `cfg_wname`, `cfg_wemail`, `cfg_wurl`, `cfg_afflink`, `smtp`, `smtp_host`, `smtp_user`, `smtp_pass`, `smtp_port`) VALUES(1, 'admin', '".md5('admin'.SECRET_KEY)."', 'My Survey System', 'you@example.com', 'http://www.e/', '', '0', 'localhost', '', '', '25')") or die(db_MSG(__FILE__,__LINE__));
   
   $stage1 = false;
   $stage2 = false;
