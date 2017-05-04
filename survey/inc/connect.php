@@ -15,7 +15,7 @@
 define('DB_HOST', '127.0.0.1');
 define('DB_USER', 'root');
 define('DB_PASS', '881226Sh');
-define('DB_NAME', 'survey');
+define('DB_NAME', 'survey2');
 define('DB_PREFIX', 'msv_');
 define('DB_CHAR_SET', 'utf8'); // Character encoding set..
 define('DB_LOCALE', 'en_GB'); // Locale..

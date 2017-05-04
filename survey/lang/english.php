@@ -114,7 +114,7 @@ $public_buttons4           = 'Complete Survey';
 $msg_home                  = 'Welcome to {software}';
 $msg_home2                 = 'A free PHP survey system for your website.<br /><br />
                               For details on how to get started with your survey system, please see the <a href="../docs/setup/index.html" title="Documentation" onclick="window.open(this);return false">Documentation</a>. <br /><br />
-                              Note that this software doesn`t come with any support, sorry.<br /><br />Hope you enjoy this script. If you would like to send a donation, please visit the <a href="http://www.maiansurvey.com" title="Maian Survey" onclick="window.open(this);return false">Maian Survey</a> website, thank you.<br /><br />David Ian Bennett.<br /><a href="http://www.maianscriptworld.co.uk" title="Maian Script World">www.maianscriptworld.co.uk</a><br /><br />
+                              Note that this software doesn`t come with any support, sorry.<br /><br />Hope you enjoy this script. If you would like to send a donation, please visit the <a href="https://ccfax.cn" title="Maian Survey" onclick="window.open(this);return false">Maian Survey</a> website, thank you.<br /><br />David Ian Bennett.<br /><a href="http://www.maianscriptworld.co.uk" title="Maian Script World">www.maianscriptworld.co.uk</a><br /><br />
                               (To edit or remove this message edit the "lang/english.php" file)
                               ';
 $msg_home3                 = 'Overview';

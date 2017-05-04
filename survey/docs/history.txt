@@ -1,5 +1,5 @@
 Changelog:
-http://www.maiansurvey.com/changelog.txt
+https://ccfax.cn/changelog.txt
 
 Latest News:
-http://www.maiansurvey.com/?rss=yes
+https://ccfax.cn/?rss=yes

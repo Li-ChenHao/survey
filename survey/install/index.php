@@ -100,10 +100,8 @@ if (isset($_POST['one'])) {
   `key_sur_id` int(11) NOT NULL default '0',
   `key_que_id` int(11) NOT NULL default '0',
   `key_word` varchar(255) NOT NULL default '',
-  `key_date` date NOT NULL default '0000-00-00',
-  PRIMARY KEY  (`key_id`),
-  KEY `kid` (`key_sur_id`),
-  KEY `kqid` (`key_que_id`)
+  `key_date` varchar(255) NOT NULL default '0000-00-00',
+  PRIMARY KEY  (`key_id`)
  ) ENGINE=MyISAM DEFAULT CHARSET=utf8
  ");
  
@@ -120,8 +118,7 @@ if (isset($_POST['one'])) {
   `que_answer_type` tinyint(4) not null default '0',
   `que_required` tinyint(1) not null default '0',
   `orderBy` int(6) NOT NULL default '0',
-  PRIMARY KEY  (`que_id`),
-  KEY `qid` (`que_sur_id`)
+  PRIMARY KEY  (`que_id`)
  ) ENGINE=MyISAM DEFAULT CHARSET=utf8
  ");
  
@@ -140,14 +137,14 @@ if (isset($_POST['one'])) {
   `sur_email_request` tinyint(1) default '0',
   `sur_email_request_message` text default null,
   `sur_view_summary` tinyint(1) not null default '1',
-  `sur_date_expire` date NOT NULL default '0000-00-00',
+  `sur_date_expire` varchar(255) NOT NULL default '0000-00-00',
   `sur_complete_goto_url` tinyint(4) NOT NULL default '0',
   `sur_complete_url` varchar(255) not null default '',
   `sur_complete_message` text default null,
   `sur_allow_multiple_votes` tinyint(1) not null default '1',
   `sur_notification_email` varchar(255) not null default '',
   `sur_status` tinyint(4) not null default '0',
-  `sur_dare_created` datetime NOT NULL default '0000-00-00 00:00:00',
+  `sur_dare_created` varchar(255) NOT NULL default '0000-00-00 00:00:00',
   `sur_color_scheme` tinyint(4) not null default '0',
   `uniCode` char(7) NOT NULL default '',
   `en_keys` enum('0','1') NOT NULL default '0',
@@ -165,10 +162,9 @@ if (isset($_POST['one'])) {
   `usr_sur_id` int(11) NOT NULL default '0',
   `usr_email` varchar(255) NOT NULL default '',
   `usr_name` varchar(255) NOT NULL default '',
-  `usr_date` date NOT NULL default '0000-00-00',
+  `usr_date` varchar(255) NOT NULL default '0000-00-00',
   `usr_IP` varchar(50) NOT NULL default '',
-  PRIMARY KEY  (`usr_id`),
-  KEY `uid` (`usr_sur_id`)
+  PRIMARY KEY  (`usr_id`)
  ) ENGINE=MyISAM DEFAULT CHARSET=utf8
  ");
  
@@ -182,9 +178,7 @@ if (isset($_POST['one'])) {
   `var_opt_id` int(11) NOT NULL default '0',
   `var_que_id` int(11) NOT NULL default '0',
   `var_text` varchar(255) not null default '',
-  PRIMARY KEY  (`var_id`),
-  KEY `void` (`var_opt_id`),
-  KEY `vqid` (`var_que_id`)
+  PRIMARY KEY  (`var_id`)
  ) ENGINE=MyISAM DEFAULT CHARSET=utf8
  ");
  

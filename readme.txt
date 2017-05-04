@@ -38,7 +38,7 @@ David Ian Bennett
 
 ---------------------------------------------------------------
 Maian Survey. Copyright © David Ian Bennett. All Rights Reserved.
-http://www.maiansurvey.com
+https://ccfax.cn
 
 Maian Script World
 http://www.maianscriptworld.co.uk
